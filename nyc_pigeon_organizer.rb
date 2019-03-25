@@ -4,7 +4,7 @@ def nyc_pigeon_organizer (hash)
   hash.each do |a, b|
     b.each do |c, d|
       d.each do |name|
-        if pigeon_list[name] == nil
+        if !pigeon_list[name] == nil
           pigeon_list[name] = {}
         end
         if pigeon_list[name][a] == nil
