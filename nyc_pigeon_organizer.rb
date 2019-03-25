@@ -7,7 +7,7 @@ def nyc_pigeon_organizer (hash)
         if !pigeon_list[name]
           pigeon_list[name] = {}
         end
-        if pigeon_list[name][a] == nil
+        if !pigeon_list[name][a] == nil
           pigeon_list[name][a] = []
         end
         pigeon_list[name][a] << c.to_s
